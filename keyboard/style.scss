@@ -1,0 +1,231 @@
+$color-keyboard: rgb(200, 200, 200);
+$color-button: #FFFFFF;
+$color-fbutton: #dadada;
+$color-text: #000000;
+$color-hover: #7e7e7e;
+$fontsize-button: 22px;
+$fontsize-fbutton: 18px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.keyboard__textarea {
+    width: 900px;
+    height: 300px;
+    padding: 5px;
+
+}
+
+.keyboard__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    padding: 10px;
+    background: $color-keyboard;
+    border: 2px solid black;
+}
+
+.keyboard__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+.keyboard__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-button;
+    text-align: center;
+    color: $color-text;
+    background: $color-button;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .3s;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    &:hover {
+        background: $color-hover;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.keyboard__fbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-button;
+    text-align: center;
+    color: $color-text;
+    background: $color-fbutton;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .3s;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    &:hover {
+        background: $color-hover;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.keyboard__dbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-button;
+    text-align: center;
+    color: $color-text;
+    background: $color-button;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .3s;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    &:hover {
+        background: $color-hover;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.keyboard__change {
+    margin-top: 20px;
+    font-size: $fontsize-fbutton;
+}
+
+.keyboard__button_active {
+    background: $color-hover;
+    transform: scale(0.9);
+    transition: .3s;
+}
+
+.key-backspace {
+    width: 120px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-tab {
+    width: 80px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-del {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-enter {
+    width: 100px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-caps {
+    width: 100px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-caps_active {
+    background: #33ff00;
+}
+
+.key-shift {
+    width: 100px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-ctrl {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-win {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-alt {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-space {
+    width: 435px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-left {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+    transform: rotate(-90deg);
+    &:active {
+        transform: rotate(-90deg) scale(0.9);
+    }
+}
+
+.key-up {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+}
+
+.key-down {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+    transform: rotate(180deg);
+    &:active {
+        transform: rotate(180deg) scale(0.9);
+    }
+}
+
+.key-right {
+    width: 50px;
+    height: 50px;
+    font-size: $fontsize-fbutton;
+    transform: rotate(90deg);
+    &:active {
+        transform: rotate(90deg) scale(0.9);
+    }
+}

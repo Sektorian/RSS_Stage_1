@@ -1,0 +1,284 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.keyboard__textarea {
+  width: 900px;
+  height: 300px;
+  padding: 5px;
+}
+
+.keyboard__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 900px;
+  padding: 10px;
+  background: #c8c8c8;
+  border: 2px solid black;
+}
+
+.keyboard__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3px 0;
+}
+
+.keyboard__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.keyboard__button:hover {
+  background: #7e7e7e;
+}
+
+.keyboard__button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.keyboard__fbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+  background: #dadada;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.keyboard__fbutton:hover {
+  background: #7e7e7e;
+}
+
+.keyboard__fbutton:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.keyboard__dbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.keyboard__dbutton:hover {
+  background: #7e7e7e;
+}
+
+.keyboard__dbutton:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.keyboard__change {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.keyboard__button_active {
+  background: #7e7e7e;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.key-backspace {
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-tab {
+  width: 80px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-del {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-enter {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-caps {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-caps_active {
+  background: #33ff00;
+}
+
+.key-shift {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-ctrl {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-win {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-alt {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-space {
+  width: 435px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-left {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.key-left:active {
+  -webkit-transform: rotate(-90deg) scale(0.9);
+          transform: rotate(-90deg) scale(0.9);
+}
+
+.key-up {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.key-down {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.key-down:active {
+  -webkit-transform: rotate(180deg) scale(0.9);
+          transform: rotate(180deg) scale(0.9);
+}
+
+.key-right {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.key-right:active {
+  -webkit-transform: rotate(90deg) scale(0.9);
+          transform: rotate(90deg) scale(0.9);
+}
+/*# sourceMappingURL=style.css.map */
